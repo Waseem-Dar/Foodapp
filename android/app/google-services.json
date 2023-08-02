@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243645438033",
+    "project_id": "oceana-1eeee",
+    "storage_bucket": "oceana-1eeee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243645438033:android:c9181504c49f616b278070",
+        "android_client_info": {
+          "package_name": "com.example.tasty_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243645438033-nipj9aj60k4m9jrog0skcr9hsokekf7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi9SoMoVVx3QOwN43Jh6aunnyHkdHHTE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243645438033-nipj9aj60k4m9jrog0skcr9hsokekf7c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
