@@ -23,9 +23,6 @@ class _MapScreenState extends State<MapScreen> {
 
   List<Marker> _markers = [];
   LatLng? _selectedLocation;
-   String _placeName = "";
-   String _city = "";
-   String _country = "";
 
   Future<Position> getUserCurrentLocation() async {
     await Geolocator.requestPermission().then((value) {}).onError((error, stackTrace) async {
@@ -42,9 +39,6 @@ class _MapScreenState extends State<MapScreen> {
         String? placeName = placemark.name;
         String? city = placemark.locality;
         String? country = placemark.country;
-        _placeName = placeName ?? '';
-        _city = city ?? '';
-        _country = country ?? '';
         return '$placeName, $city, $country';
       }
     } catch (e) {
@@ -91,7 +85,6 @@ class _MapScreenState extends State<MapScreen> {
                 onTap: () {
                   if (_selectedLocation != null) {
                     log('Selected Location: ${_selectedLocation.toString()}');
-                    var lo = _selectedLocation.toString();
                     getPlaceName(_selectedLocation!.latitude, _selectedLocation!.longitude).then((result) {
                       log(result);
                       Navigator.pushReplacement(context, MaterialPageRoute(

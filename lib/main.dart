@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tasty_food/login_screens/login_screen.dart';
-import 'package:tasty_food/screens/home_screen.dart';
-import 'package:tasty_food/screens/slider.dart';
 import 'package:tasty_food/screens/splash_screen.dart';
-import 'package:tasty_food/screens/tabs_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 

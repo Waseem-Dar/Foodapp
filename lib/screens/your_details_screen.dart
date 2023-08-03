@@ -36,17 +36,12 @@ class _YourDetailsState extends State<YourDetails> {
     };
      try{
        FirebaseFirestore.instance.collection("order").add(info);
-       log(info["phone"]);
-       log("\norder complete");
      }catch(e){
        log(e.toString());
      }
 
   }
-
-
-
-int total= 1;
+   int total= 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -103,7 +98,7 @@ int total= 1;
                   Text("Add location",style:TextStyle(color: Colors.orange,fontSize: 19),),
                 ],
               ),
-              subtitle: Text(widget.selectedLocation,style: const TextStyle(fontSize: 17),),
+              subtitle: Text(widget.selectedLocation,style: const TextStyle(fontSize: 17),maxLines: 2,),
               trailing: const Icon(Icons.arrow_forward_ios_rounded,color: Colors.orange,),
 
             ),
@@ -159,7 +154,7 @@ int total= 1;
                 )
               ],
             ),
-             SizedBox(height: MediaQuery.of(context).size.height* 0.16,),
+             SizedBox(height: MediaQuery.of(context).size.height* 0.15,),
             SizedBox(
               height: MediaQuery.of(context).size.height* 0.28,
               child: Card(
