@@ -208,8 +208,6 @@ class _YourDetailsState extends State<YourDetails> {
                 ),
               ),
             )
-
-
           ],
         ),
       ),

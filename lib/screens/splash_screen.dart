@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:tasty_food/login_screens/login_screen.dart';
 import 'package:tasty_food/screens/home_screen.dart';
-import 'package:tasty_food/screens/slider.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       if(FirebaseAuth.instance.currentUser != null){
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomeScreen(),));
       }else{
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SliderScreen(),));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const LogInScreen(),));
       }
     });
   }
